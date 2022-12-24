@@ -1,0 +1,112 @@
+.wpx-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #04040461;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+}
+
+.wpx-modal-container {
+  background-color: #456;
+  height: calc(100% - 4rem);
+  width: calc(100% - 4rem);
+  display: flex;
+  flex-direction: column;
+}
+.wpx-modal-header {
+  background-color: #fff;
+  padding: 20px 5px;
+  min-height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #656568;
+  flex: 10%;
+}
+.wpx-close-icon {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+.wpx-close-icon img {
+  filter: invert(13%) sepia(94%) saturate(7466%) hue-rotate(0deg)
+    brightness(94%) contrast(115%);
+  transition: 0.5s all ease-in-out;
+}
+.wpx-close-icon:hover img {
+  filter: invert(43%) sepia(94%) saturate(7006%) hue-rotate(0deg)
+    brightness(74%) contrast(100%);
+}
+.wpx-modal-header h3 {
+  margin: 0;
+  padding: 0;
+  padding-right: var(--wpx-p0\5);
+}
+.wpx-modal-body {
+  background-color: #895;
+  padding: 10px;
+  flex: 80%;
+  min-height: 30px;
+  overflow: auto;
+}
+.wpx-modal-footer {
+  background-color: #fff;
+  padding: 10px;
+  min-height: 30px;
+  display: flex;
+  flex: 10%;
+}
+.wpx-modal-btn {
+  padding: 12px 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: var(--md-br-size);
+  border: 2px solid;
+  background-color: #f00;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.wpx-modal-btn:hover {
+  background-color: rgb(100, 4, 4);
+}
+
+.wpx-fade-in {
+  animation: fadeIn 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 1, 1.23);
+  /* opacity: 0; */
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(100%);
+    transform: translateY(-100%) scale(0.3);
+    /* opacity: 0; */
+  }
+  to {
+    transform: translateY(0);
+
+    /* opacity: 1; */
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 
+cubic-bezier(0.32, 2, 0.55, 0.27)
+cubic-bezier(0.42, 0.97, 0.52, 1.49)
+cubic-bezier(.5,-.75,.7,2)
+cubic-bezier(.51,.92,.24,1.15)
+cubic-bezier(0.25, 0.75, 0.5, 1.25);
+*/

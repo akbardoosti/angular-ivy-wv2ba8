@@ -1,0 +1,26 @@
+.wpx-ch-head {
+  border-bottom: 1px solid var(--wpx-char-br-color);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  min-height: var(--min-header-height);
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  padding-left: var(--wpx-p0\75);
+  gap: var(--md-gap-size);
+}
+
+.wpx-ch-head > app-wpx-tab {
+  flex: 100%;
+}
+.wpx-ch-head > app-wpx-nav {
+  align-self: center;
+}
+.wpx-ch-head > h3 {
+  padding-right: var(--wpx-p0\75);
+  align-self: center;
+}
+.wpx-ch-head > app-wpx-input {
+  align-self: center;
+}

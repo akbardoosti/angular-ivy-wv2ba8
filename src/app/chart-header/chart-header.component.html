@@ -1,0 +1,11 @@
+<div class="wpx-ch-head">
+  <!-- wpx-bg wpx-p1 -->
+  <app-wpx-tab *ngIf="isHeaderTab"></app-wpx-tab>
+  <h3 *ngIf="!isHeaderTab">{{ chartLabel }}</h3>
+  <app-wpx-input></app-wpx-input>
+  <app-wpx-nav
+    *ngIf="!isNavItemListEmpty()"
+    [itemList]="navItemList"
+    class=""
+  ></app-wpx-nav>
+</div>

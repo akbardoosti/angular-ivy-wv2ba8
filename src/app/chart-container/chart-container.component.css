@@ -1,0 +1,14 @@
+.wpx-chart {
+  background-color: var(--wpx-chart-bg);
+  border-radius: var(--lg-br-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 12rem;
+}
+.wpx-chart > * {
+  flex: 100%;
+  width: 100%;
+}

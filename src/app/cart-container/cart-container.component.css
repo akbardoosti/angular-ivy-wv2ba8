@@ -1,0 +1,11 @@
+.wpx-cart-container {
+  gap: var(--cart-gap-size);
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.wpx-cart-container > * {
+  flex: 1;
+  flex-grow: 1;
+}

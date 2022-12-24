@@ -1,0 +1,24 @@
+<div *ngIf="!isItemListEmpty()" class="wpx-drp-nav-btn">
+  <a class="wpx-nav-btn" (click)="navButtonClick()">
+    <img
+      alt="bama"
+      src="https://yasinosint.ir/assets/img/bama/bama11.png"
+      style="width: 30px; height: 30px;"
+    />
+  </a>
+  <nav class="wpx-drp-nav">
+    <ul class="wpx-m0" no-style hidden>
+      <li *ngFor="let item of itemList">
+        <a href="#" (click)="navButtonClick()">
+          <img
+            width="24"
+            height="24"
+            [src]="item['img_src']"
+            [alt]="item['fa_name']"
+            id="image"
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

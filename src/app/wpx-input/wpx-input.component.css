@@ -1,0 +1,50 @@
+input {
+  outline: none;
+}
+input[type='number'],
+input[type='password'],
+input[type='text'],
+textarea {
+  -webkit-appearance: none;
+}
+.ant-btn,
+[role='button'],
+a,
+area,
+button,
+input:not([type='range']),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+.wpx-form-control {
+  display: block;
+  width: 100%;
+  /* height: calc(2.95rem + 2px); */
+  padding: 0.25rem 1.15rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 0.25rem;
+}
+
+.wpx-form-control.focus,
+.wpx-form-control:focus {
+  border-color: var(--wpx-br-color-input-focus);
+  color: #575962;
+  box-shadow: none;
+}
+
+.wpx-form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #c2c7f3;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(88 103 221 / 25%);
+}

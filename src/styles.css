@@ -1,0 +1,511 @@
+/* Add application styles & imports to this file! */
+:root {
+  /* Divar color info */
+  --divar-color: #a12524;
+  --divar-bg: #f5e8e8;
+
+  /* Sheypoor color info */
+  --shepoor-color: #0163e8;
+  --sheypoor-bg: #e8ebf5;
+
+  /* Bama color info */
+  --bama-color: #8be333;
+  --bama-bg: #f7fcf7;
+
+  /* Telegram color info */
+  --telegram-color: #08c;
+  --telegram-bg: #f1faff;
+
+  /* Twitter color info */
+  --twitter-color: #00acee;
+  --twitter-bg: #f4fcff;
+
+  /* RSS color info */
+  --rss-color: #f8991d;
+  --rss-bg: #fff4ec;
+
+  /* Soroush color info */
+  --soroush-color: #206d85;
+  --soroush-bg: #edffff;
+
+  /* Eitaa color info */
+  --eitaa-color: #ef7b00;
+  --eitaa-bg: #ffede2;
+
+  /* Input focus border size */
+  --wpx-br-size-input-focus: 1px;
+  --wpx-br-color-input-focus: rgb(59, 1, 47);
+}
+
+:root {
+  /* Headers font sizes */
+  --h1-fs: 20px;
+  --h1-fw: 900;
+  --h2-fs: 17px;
+  --h2-fw: 700;
+  --h3-fs: 20px;
+  --h3-fw: 600;
+  --h4-fs: 20px;
+  --h4-fw: 500;
+  --h5-fs: 20px;
+  --h5-fw: 300;
+  --p-fs: 12px;
+
+  /* Padding */
+  --wpx-p0\25: 0.25rem;
+  --wpx-p0\5: 0.5rem;
+  --wpx-p0\75: 0.75rem;
+  --wpx-p1: 1rem;
+  --wpx-p1\5: 1.5rem;
+  --wpx-p2: 2rem;
+  --wpx-p2\5: 2.5rem;
+
+  /* Border radius size */
+  --sm-br-size: 4px;
+  --md-br-size: 8px;
+  --lg-br-size: 12px;
+  --min-header-height: 75px;
+
+  --cart-lg-width: 33.33%;
+  --cart-md-width: 33.33%;
+  --cart-sm-width: 33.33%;
+  --cart-gap-size: 16px;
+  --cart-sm-gap-size: 8px;
+
+  --sm-gap-size: 4px;
+  --md-gap-size: 8px;
+  --lg-gap-size: 12px;
+
+  --wpx-md-line-height: 1.5rem;
+
+  --tab-sm-padding-size: 0.5rem;
+}
+
+body {
+  /* Break points value */
+  --xs-break-point: 576px;
+  --sm-break-point: 576px;
+  --md-break-point: 768px;
+  --lg-break-point: 992px;
+  --xlg-break-point: 1200px;
+  --xxlg-break-point: 1400px;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  font-family: 'IranSans';
+}
+:root {
+  --wpx-blue: #0d6efd;
+  --wpx-indigo: #6610f2;
+  --wpx-purple: #6f42c1;
+  --wpx-pink: #d63384;
+  --wpx-red: #dc3545;
+  --wpx-orange: #fd7e14;
+  --wpx-yellow: #ffc107;
+  --wpx-green: #198754;
+  --wpx-teal: #20c997;
+  --wpx-cyan: #0dcaf0;
+  --wpx-black: #000;
+  --wpx-white: #fff;
+  --wpx-gray: #6c757d;
+  --wpx-gray-dark: #343a40;
+  --wpx-gray-100: #f8f9fa;
+  --wpx-gray-200: #e9ecef;
+  --wpx-gray-300: #dee2e6;
+  --wpx-gray-400: #ced4da;
+  --wpx-gray-500: #adb5bd;
+  --wpx-gray-600: #6c757d;
+  --wpx-gray-700: #495057;
+  --wpx-gray-800: #343a40;
+  --wpx-gray-900: #212529;
+  --wpx-primary: #0d6efd;
+  --wpx-secondary: #6c757d;
+  --wpx-success: #198754;
+  --wpx-info: #0dcaf0;
+  --wpx-warning: #ffc107;
+  --wpx-danger: #dc3545;
+  --wpx-light: #f8f9fa;
+  --wpx-dark: #212529;
+  --wpx-primary-rgb: 13, 110, 253;
+  --wpx-secondary-rgb: 108, 117, 125;
+  --wpx-success-rgb: 25, 135, 84;
+  --wpx-info-rgb: 13, 202, 240;
+  --wpx-warning-rgb: 255, 193, 7;
+  --wpx-danger-rgb: 220, 53, 69;
+  --wpx-light-rgb: 248, 249, 250;
+  --wpx-dark-rgb: 33, 37, 41;
+  --wpx-white-rgb: 255, 255, 255;
+  --wpx-black-rgb: 0, 0, 0;
+  --wpx-body-color-rgb: 33, 37, 41;
+  --wpx-body-bg-rgb: 255, 255, 255;
+  --wpx-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --wpx-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+  --wpx-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --wpx-body-font-family: var(--wpx-font-sans-serif);
+  --wpx-body-font-size: 1rem;
+  --wpx-body-font-weight: 400;
+  --wpx-body-line-height: 1.5;
+  --wpx-body-color: #212529;
+  --wpx-body-bg: #fff;
+  --wpx-border-width: 1px;
+  --wpx-border-style: solid;
+  --wpx-border-color: #dee2e6;
+  --wpx-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --wpx-border-radius: 0.375rem;
+  --wpx-border-radius-sm: 0.25rem;
+  --wpx-border-radius-lg: 0.5rem;
+  --wpx-border-radius-xl: 1rem;
+  --wpx-border-radius-2xl: 2rem;
+  --wpx-border-radius-pill: 50rem;
+  --wpx-link-color: #0d6efd;
+  --wpx-link-hover-color: #0a58ca;
+  --wpx-code-color: #d63384;
+  --wpx-highlight-bg: #fff3cd;
+
+  --wpx-chart-bg: rgb(255, 245, 189);
+  --wpx-char-br-color: rgb(161, 161, 159);
+
+  /*Tab style*/
+  --wpx-tab-border-size: 3px;
+  --wpx-tab-active-border-bottom: var(--wpx-tab-border-size) solid #654;
+  --wpx-tab-bg-color: rgb(255, 253, 253);
+  --wpx-tab-border-bottom: var(--wpx-tab-border-size) solid
+    var(--wpx-tab-bg-color);
+  --wpx-hover-tab-bg-color: rgb(247, 196, 130);
+}
+
+p {
+  font-family: Lato;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+.wpx-c1,
+.wpx-c2,
+.wpx-c3,
+.wpx-c4,
+.wpx-c5,
+.wpx-c6,
+.wpx-c7,
+.wpx-c8,
+.wpx-c9,
+.wpx-c10,
+.wpx-c11,
+.wpx-c12 {
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wpx-c1 {
+    width: 8.333%;
+    flex-grow: 1;
+  }
+
+  .wpx-c2 {
+    width: 16.666%;
+    flex-grow: 2;
+  }
+
+  .wpx-c3 {
+    width: 24.999%;
+    flex-grow: 3;
+  }
+
+  .wpx-c4 {
+    width: 33.332%;
+    flex-grow: 4;
+  }
+
+  .wpx-c5 {
+    width: 41.665%;
+    flex-grow: 5;
+  }
+
+  .wpx-c6 {
+    width: 50%;
+    flex-grow: 6;
+  }
+
+  .wpx-c7 {
+    width: 58.331%;
+    flex-grow: 7;
+  }
+
+  .wpx-c8 {
+    width: 66.664%;
+    flex-grow: 8;
+  }
+
+  .wpx-c9 {
+    width: 74.997%;
+    flex-grow: 9;
+  }
+
+  .wpx-c10 {
+    width: 83.333%;
+    flex-grow: 10;
+  }
+
+  .wpx-c11 {
+    width: 91.663%;
+    flex-grow: 11;
+  }
+
+  .wpx-c12 {
+    width: 100%;
+    flex-grow: 12;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+/* Margin */
+.wpx-m0 {
+  margin: 0;
+}
+.wpx-mt0\:25 {
+  /* margin-top: var(--wpx-p0\25); */
+  margin-top: 0;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+/* Padding */
+.wpx-p0\:25 {
+  padding: var(--wpx-p0\25) !important;
+}
+.wpx-p0\:5 {
+  padding: var(--wpx-p0\5) !important;
+}
+.wpx-p0\:75 {
+  padding: var(--wpx-p0\75) !important;
+}
+.wpx-p1 {
+  padding: var(--wpx-p1) !important;
+}
+.wpx-p1\:5 {
+  padding: var(--wpx-p1\5) !important;
+}
+.wpx-p2 {
+  padding: var(--wpx-p2) !important;
+}
+.wpx-p2\:5 {
+  padding: var(--wpx-p2\5) !important;
+}
+
+/* Padding Left and Right */
+.wpx-px0\:25 {
+  padding-left: var(--wpx-p0\25) !important;
+  padding-right: var(--wpx-p0\25) !important;
+}
+.wpx-px0\:5 {
+  padding-left: var(--wpx-p0\5) !important;
+  padding-right: var(--wpx-p0\5) !important;
+}
+.wpx-px0\:75 {
+  padding-right: var(--wpx-p0\75) !important;
+  padding-left: var(--wpx-p0\75) !important;
+}
+.wpx-px1 {
+  padding-right: var(--wpx-p1) !important;
+  padding-left: var(--wpx-p1) !important;
+}
+.wpx-px1\:5 {
+  padding-right: var(--wpx-p1\5) !important;
+  padding-left: var(--wpx-p1\5) !important;
+}
+.wpx-px2 {
+  padding-right: var(--wpx-p2) !important;
+  padding-left: var(--wpx-p2) !important;
+}
+.wpx-px2\:5 {
+  padding-right: var(--wpx-p2\5) !important;
+  padding-left: var(--wpx-p2\5) !important;
+}
+
+.wpx-py0\:25 {
+  padding-top: var(--wpx-p0\25) !important;
+  padding-bottom: var(--wpx-p0\25) !important;
+}
+.wpx-pl0\:25 {
+  padding-left: var(--wpx-p0\25) !important;
+}
+.wpx-pr0\:25 {
+  padding-right: var(--wpx-p0\25) !important;
+}
+.wpx-pt0\:25 {
+  padding-top: var(--wpx-p0\25) !important;
+}
+.wpx-pb0\:25 {
+  padding-bottom: var(--wpx-p0\25) !important;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+.wpx-bg {
+  border-radius: var(--md-br-size);
+  padding: var(--wpx-p0\25);
+  background-color: var(--wpx-highlight-bg);
+  width: 100%;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+.wpx-row {
+  width: 100%;
+}
+
+.wpx-flex {
+  display: flex !important;
+  flex-direction: column;
+}
+.wpx-fl-dc {
+  flex-direction: column;
+}
+
+/* Center */
+.wpx-j-c {
+  justify-content: center;
+}
+
+/* Space between */
+.wpx-j-sb {
+  justify-content: space-between;
+}
+
+/* Space around */
+.wpx-j-sa {
+  justify-content: space-around;
+}
+
+/* Align-items: center */
+.wpx-alc {
+  align-items: center;
+}
+
+.wpx-al-s {
+  align-items: stretch;
+}
+.wpx-gap-4 {
+  gap: var(--cart-gap-size);
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .wpx-flex {
+    /* flex-direction: row; */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+[hidden] {
+  display: none;
+}
+
+.wpx-rtl {
+  direction: rtl;
+}
+
+[class*=' la-'],
+[class^='la-'] {
+  font-size: 1.3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Icons styles */
+.la {
+  display: inline-block;
+  font: normal normal normal 16px/1 LineAwesome;
+  font-size: inherit;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.la-info {
+  background-image: url(info.svg);
+}
+
+.la-close {
+  background-image: url(close.svg);
+}
+
+.la-info,
+.la-close {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

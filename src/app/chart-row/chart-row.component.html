@@ -1,0 +1,8 @@
+<div class="wpx-row wpx-flex wpx-gap-4 wpx-j-c wpx-chart-container wpx-mt0:25">
+  <div
+    *ngFor="let chart of chartList"
+    [class]="'wpx-c' + chart.options.col_size"
+  >
+    <app-chart-container [chartLabel]="chart.label"></app-chart-container>
+  </div>
+</div>

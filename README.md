@@ -1,3 +1,4 @@
-# angular-ivy-wv2ba8
+# Create your own Dashboard
+## Author: **Akbar Doost** ([Link ⚡️](https://wpx93.com))
+### Features
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-wv2ba8)
